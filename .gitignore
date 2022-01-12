@@ -8,6 +8,9 @@ npm-debug.*
 *.key
 *.mobileprovision
 *.orig.*
+*.history
+*.eslintrc.js
+.prettierrc.js
 web-build/
 
 # macOS

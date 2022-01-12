@@ -1,20 +1,34 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
+import React from 'react';
+import { createStackNavigator } from '@react-navigation/stack';
+import { NavigationContainer } from '@react-navigation/native';
+import ColorPalette from './screens/ColorPalette';
+import Home from './screens/Home';
+
+const Stack = createStackNavigator();
+
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+    <NavigationContainer>
+      <Stack.Navigator>
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+        <Stack.Screen
+          name="Home"
+          component={Home}
+        />
+
+        <Stack.Screen
+          name="ColorPalette"
+          component={ColorPalette}
+          options={{title: 'Schema Color Palette'}}
+        />
+
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
+
+
+
+
+export default App; 
