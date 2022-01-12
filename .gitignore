@@ -9,7 +9,7 @@ npm-debug.*
 *.mobileprovision
 *.orig.*
 *.history
-*.eslintrc.js
+# *.eslintrc.js
 # .prettierrc.js
 web-build/
 
