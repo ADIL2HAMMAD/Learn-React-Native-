@@ -10,7 +10,7 @@ npm-debug.*
 *.orig.*
 *.history
 *.eslintrc.js
-.prettierrc.js
+# .prettierrc.js
 web-build/
 
 # macOS
